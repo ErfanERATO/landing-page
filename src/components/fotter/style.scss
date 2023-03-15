@@ -1,0 +1,39 @@
+.footer-description {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.company-description {
+  .company-name {
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .company-address-info {
+    padding-top: 20px;
+    .company-address {
+      font-weight: 500;
+      font-size: medium;
+    }
+  }
+}
+
+.contact-us-description {
+  .contact-with-us-title {
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .contact-way-info {
+    padding-top: 20px;
+    .contact-number {
+      font-weight: 500;
+      font-size: medium;
+    }
+    .contact-email {
+      font-weight: 500;
+      font-size: medium;
+    }
+  }
+}

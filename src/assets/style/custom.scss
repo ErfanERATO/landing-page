@@ -1,0 +1,150 @@
+html {
+  font-size: 70% !important;
+  line-height: 1.15 !important;
+}
+:where(.css-dev-only-do-not-override-141rmge).ant-menu-light:not(
+    .ant-menu-horizontal
+  )
+  .ant-menu-item:not(.ant-menu-item-selected):hover {
+  color: #fff !important;
+}
+.ant-menu-item {
+  &:active {
+    background-color: transparent !important;
+  }
+  border-radius: 0.475rem !important;
+}
+.ant-form-item-label {
+  color: #3f4254 !important;
+}
+.ant-form-item-control-input-content {
+  .ant-input {
+    border: none;
+    padding: 0.775rem 1rem;
+    font-size: 1.1rem !important;
+    border-radius: 0.475rem;
+  }
+}
+
+.ant-menu-item-selected {
+  background-color: #fff !important;
+  color: #83afd4 !important;
+}
+
+.ant-menu {
+  border: none !important;
+}
+
+// -------------slider-----------------
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+// -------------about us-----------------
+.about-us {
+  padding-top: 50px;
+  text-align: center;
+  .about-us-title {
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  .about-us-description {
+    padding-top: 20px;
+    .about-us-description-text {
+      font-weight: 500;
+    }
+  }
+}
+// -------------representation-----------------
+
+.representation-section {
+  padding-top: 50px;
+  .representation-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .representation-card {
+    padding-top: 30px;
+  }
+}
+
+// -------------Supplies-----------------
+
+.supplies-section {
+  padding-top: 50px;
+  .supplies-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .supplies-card {
+    padding-top: 30px;
+  }
+}
+// -------------seperator-----------------
+.seperator-section {
+  background-color: #e7e7e7;
+  margin-top: 50px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  .title {
+    display: flex;
+    background-color: red;
+    width: 120px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    .text {
+      font-weight: 700;
+    }
+  }
+  .trust-sub-text {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .trust-sub2-text {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .description {
+    padding-top: 25px;
+  }
+}
+
+// -------------Management-----------------
+
+.management-section {
+  padding-top: 50px;
+
+  .management-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .management-card {
+    padding-top: 30px;
+  }
+}
+
+// -------------Personnel-----------------
+
+.personnel-section {
+  padding-top: 50px;
+
+  .personnel-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .personnel-card {
+    padding-top: 30px;
+  }
+}

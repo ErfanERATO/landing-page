@@ -1,0 +1,12 @@
+.supplies-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+  .avatar-info {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+}
