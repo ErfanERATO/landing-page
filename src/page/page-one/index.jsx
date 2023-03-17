@@ -13,32 +13,40 @@ const PageOne = () => {
       <SliderCustom />
 
       <div className="about-us">
-        <div className="about-us-title">درباره‌ی ما</div>
+        <div className="about-us-title fw-600">درباره‌ی ما</div>
 
-        <div className="about-us-description">
-          <div className="about-us-description-text">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        <div className="about-us-description fw-500">
+          <div>
+            خدمات فنی ناصری مرکز تخصصی نصب، آموزش و تعمیرات لوازم خانگی در
+            نیشابور بوده و مجری تخصصی خدمات
           </div>
-          <div className="about-us-description-text">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+          <div>
+            پس از فروش برند های مطرح ایرانی و خارجی درکنار شماست تا دسترسی به
+            متخصصان و تکنیسین های مجرب را برای شما آسان کند .
           </div>
-          <div className="about-us-description-text">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+          <div>
+            علاوه بر گرد آوری تیم تخصصی تعمیرات ، استفاده از قطعات اصلی ارئه
+            فاکتور انلاین و گارانتی رسمی است .
           </div>
+          {/* <div>
+            مجموعه ما با داشتن بیشترین متقاضی‌ در نیشابور برای خرید قطعات دستگاه
+            ، شوینده مناسب ،کیسه جاروبرقی و انواع لوازم جانبی ،درخدمت شما
+            مشتریان گرامی میباشد .
+          </div> */}
         </div>
 
         <AboutBox />
       </div>
 
       <div className="representation-section">
-        <div className="representation-title">نمایندگی‌های فعال</div>
+        <div className="representation-title fw-600">نمایندگی‌های فعال</div>
         <div className="representation-card">
           <Representation />
         </div>
       </div>
 
       <div className="supplies-section">
-        <div className="supplies-title">لوازم تحت پوشش</div>
+        <div className="supplies-title fw-600">لوازم تحت پوشش</div>
         <div className="supplies-card">
           <Supplies />
         </div>
@@ -46,7 +54,7 @@ const PageOne = () => {
 
       <div className="seperator-section">
         <div className="title">
-          <div className="text">درباره تیم خبره ما</div>
+          <div className="text fw-600">درباره تیم خبره ما</div>
         </div>
         <div className="trust-sub-text">اعتماد شما و سپردن پروژه</div>
         <div className="trust-sub2-text">متخصصان</div>
@@ -62,14 +70,14 @@ const PageOne = () => {
       </div>
 
       <div className="management-section">
-        <div className="management-title">کادر مدیریتی</div>
+        <div className="management-title fw-600">کادر مدیریتی</div>
         <div className="management-card">
           <Management />
         </div>
       </div>
 
       <div className="personnel-section">
-        <div className="personnel-title">پرسنل و تکنسین</div>
+        <div className="personnel-title fw-600">پرسنل و تکنسین</div>
         <div className="personnel-card">
           <Personnel />
         </div>

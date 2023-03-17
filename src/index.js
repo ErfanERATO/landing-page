@@ -5,13 +5,12 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ConfigProvider } from "antd";
 import theme from "../src/utils/theme";
+import "../src/assets/fonts/kalame/stylesheet.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ConfigProvider
-      theme={{ token: theme }}
-    >
+    <ConfigProvider theme={{ token: theme }}>
       <BrowserRouter>
         <App />
       </BrowserRouter>

@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import { Carousel } from "antd";
 import { Col, Divider, Row } from "antd";
 import "../slider/style.scss";
-import vector1 from "../../assets/image/vector1.jpg";
-import vector2 from "../../assets/image/vector2.jpg";
-import image3 from "../../assets/image/image3.jpg";
+import "../../assets/style/custom.scss";
 
 const contentStyle = {
-  height: "500px",
+  height: "25.438rem",
   color: "#fff",
-  lineHeight: "160px",
   textAlign: "center",
   background: "#364d79",
 };
@@ -26,35 +23,53 @@ const SliderCustom = () => {
     >
       <Col
         className="gutter-row"
-        md={{span:12}}
+        xs={{ span: 24 }}
+        sm={{ span: 8 }}
+        md={{ span: 8 }}
         style={{
           justifyContent: "center",
         }}
       >
-        <div>
-          <div className="text-slider">
-            <div className="title">سرویس فنی و</div>
-            <div className="title">خدماتی ناصری</div>
-            <div className="sub-title">
-              <p> ما در اینجا هستم که بگیم سلام بچه کونیا خوب کونی</p>
-              <p> خوب کونی شدینا حالا بگو ببینم کون میدی یا نه</p>
-              <p> همممم من شاید کونم خیلی تنگ باشه ولی من به</p>
+        <div className="text-holder">
+          <div className="slider-text-title">
+            <div>
+              خدمات فنی <span>ناصری</span>
+            </div>
+          </div>
+
+          <div className="slider-text-sub fw-400">
+            <div>
+              نمایندگی تعمیرات لوازم خانگی : لباسشویی اتوماتیک٬ ماشین ظرفشویی٬
+              یخچال فریزر٬ کولر گازی٬ اسپیلت
+            </div>
+            <div>
+              مجموعه ما با داشتن بیشترین متقاضی‌ در نیشابور برای خرید قطعات
+              دستگاه ، شوینده مناسب ،کیسه جاروبرقی و انواع لوازم جانبی ،درخدمت
+              شما مشتریان گرامی میباشد .
             </div>
           </div>
         </div>
       </Col>
 
-      <Col className="gutter-row" md={{span:12}}>
-        <div>
-          <Carousel autoplay>
+      <Col
+        className="gutter-row"
+        xs={{ span: 24 }}
+        sm={{ span: 18 }}
+        md={{ span: 16 }}
+      >
+        <div className="slider-holder">
+          <Carousel autoplay className="carousel">
             <div>
-              <img src={vector1} alt="" style={contentStyle} />
+              <h3 style={contentStyle}>1</h3>
             </div>
             <div>
-              <img src={vector2} alt="" style={contentStyle} />
+              <h3 style={contentStyle}>2</h3>
             </div>
             <div>
-              <img src={image3} alt="" style={contentStyle} />
+              <h3 style={contentStyle}>3</h3>
+            </div>
+            <div>
+              <h3 style={contentStyle}>4</h3>
             </div>
           </Carousel>
         </div>

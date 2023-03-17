@@ -62,6 +62,9 @@ const Management = () => {
             <div className="main-card">
               <div className="avatar">
                 <Avatar
+                style={{
+                  backgroundColor:"#eff2f9"
+                }}
                   size={{
                     xs: 90,
                     sm: 60,
@@ -74,8 +77,8 @@ const Management = () => {
                 />
               </div>
               <div className="card-info">
-                <div className="name">{element.name}</div>
-                <div className="position">{element.position}</div>
+                <div className="name fw-600">{element.name}</div>
+                <div className="position fw-500">{element.position}</div>
               </div>
             </div>
           </div>

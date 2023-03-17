@@ -6,7 +6,7 @@ const { Header, Content, Footer } = Layout;
 
 const SiteLayout = ({ children }) => {
   const {
-    token: { colorBgContainer, headerBackGround, pageBackaground },
+    token: { colorBgContainer, headerBackGround, pageBackaground, headerTextColor },
   } = theme.useToken();
   return (
     <Layout
@@ -18,6 +18,7 @@ const SiteLayout = ({ children }) => {
       }}
     >
       <Header
+      className="fw-600"
         style={{
           position: "sticky",
           top: 0,
@@ -39,7 +40,7 @@ const SiteLayout = ({ children }) => {
         /> */}
         <Menu
           // theme="dark"
-          style={{ color: "#a4a5a5" }}
+          style={{ color: headerTextColor, }}
           mode="horizontal"
           defaultSelectedKeys={["2"]}
           items={[
@@ -72,7 +73,7 @@ const SiteLayout = ({ children }) => {
         />
       </Header>
       <Content
-        className="site-layout"
+        className="site-layout fw-600"
         style={{
           padding: "50px 0px",
         }}

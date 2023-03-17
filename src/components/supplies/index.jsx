@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Divider, Row, Avatar } from "antd";
 import { AntDesignOutlined } from "@ant-design/icons";
 import "../supplies/style.scss";
+import "../../assets/style/custom.scss"
 
 const Supplies = () => {
   let elements = [
@@ -58,6 +59,9 @@ const Supplies = () => {
           <div className="supplies-info">
             <div className="avatar">
               <Avatar
+              style={{
+                backgroundColor:"#eff2f9"
+              }}
                 size={{
                   xs: 50,
                   sm: 60,
@@ -69,7 +73,7 @@ const Supplies = () => {
                 icon={element.icon}
               />
             </div>
-            <div className="avatar-info">{element.info}</div>
+            <div className="avatar-info fw-500">{element.info}</div>
           </div>
         </Col>
       ))}

@@ -5,20 +5,18 @@
     flex-direction: row;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    height: 120px;
-    border-radius: 7px;
+    height: 7.5rem;
+    border-radius: 0.438rem;
     justify-content: center;
     align-items: center;
     .card-info {
       text-align: right;
       padding-right: 15px;
       .name {
-        font-weight: bold;
-        font-size: 20px;
+        font-size: 1.25rem;
       }
       .position {
-        font-weight: normal;
-        font-size: 12px;
+        font-size: 0.75rem;
         padding-top: 5px;
       }
     }

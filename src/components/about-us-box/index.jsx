@@ -3,10 +3,6 @@ import "../about-us-box/style.scss";
 import { BsLightbulb } from "react-icons/bs";
 import { Col, Divider, Row } from "antd";
 
-const style = {
-  padding: "45px 0",
-};
-
 const AboutBox = () => {
   let elements = [
     {
@@ -38,10 +34,10 @@ const AboutBox = () => {
     >
       {elements.map((element, key) => (
         <Col key={key} className="gutter-row" lg={6} >
-          <div style={style} className="first-card">
+          <div className="first-card">
             <div className="icon-box">
               <div className="main-icon">
-                <BsLightbulb fontSize="30px" />
+                <BsLightbulb fontSize="30px" color="#3b82f6"/>
               </div>
             </div>
             <div className="text">

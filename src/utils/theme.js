@@ -2,8 +2,12 @@ export default {
   pageBackaground: "#ffffff",
 
   headerBackGround: "#ffffff",
-  headerTextColor: "#50586f",
+  headerTextColor: "#4f585f",
 
   logoText: "#333333",
 
+  mainTextColor:"#21313e",
+
+
+  fontFamily: "Kalameh"
 };

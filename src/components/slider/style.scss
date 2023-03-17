@@ -1,14 +1,26 @@
-.text-slider {
-    justify-content: center;
-    align-self: center;
-    padding-top: 50px;
-    .title {
-      font-weight: bold;
-      font-size: 45px;
-    }
-    .sub-title {
-      padding-top: 20px;
-      font-size: 15px;
-      font-weight: 400;
+.text-holder {
+  height: 25.438rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  line-height: 1.875rem;
+  .slider-text-title{
+    font-size: 3.7rem;
+    line-height: 3rem;
+    div{
+      color: #21313e;
+      span{
+        color: #3b82f6;
+      }
     }
   }
+  .slider-text-sub{
+    padding-top: 25px;
+    color: #9ba0c6;
+  }
+}
+
+.slider-holder {
+  height: 25.438rem;
+}
