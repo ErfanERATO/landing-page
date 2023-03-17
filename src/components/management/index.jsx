@@ -44,31 +44,38 @@ const Management = () => {
         >
           <div className="card-holder">
             <div className="main-card">
-              <div className="avatar">
-                <Avatar
-                  style={{
-                    backgroundColor: "#eff2f9",
-                  }}
-                  size={{
-                    xs: 70,
-                    sm: 70,
-                    md: 80,
-                    lg: 90,
-                    xl: 120,
-                    xxl: 130,
-                  }}
-                  icon={element.icon}
-                />
-              </div>
-              <div className="card-info">
-                <div className="name fw-600">
-                  نام‌و‌نام‌خانوادگی : {element.name}
+              <div className="avatar-name-position-expertise">
+                <div className="avatar-name-position">
+                  <div className="avatar">
+                    <Avatar
+                      style={{
+                        backgroundColor: "#eff2f9",
+                      }}
+                      size={{
+                        xs: 30,
+                        sm: 40,
+                        md: 50,
+                        lg: 60,
+                        xl: 70,
+                        xxl: 100,
+                      }}
+                      icon={element.icon}
+                    />
+                  </div>
+
+                  <div className="name-position">
+                    <div className="name">
+                      <p>{element.name}</p>
+                    </div>
+
+                    <div className="position">
+                      <p>{element.position}</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="position fw-500">
-                  سمت مدیریتی : {element.position}
-                </div>
-                <div className="expertise fw-500">
-                  تخصص : {element.expertise}
+
+                <div className="maneger-description">
+                  <p>{element.expertise}</p>
                 </div>
               </div>
             </div>

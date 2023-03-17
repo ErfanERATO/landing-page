@@ -34,7 +34,7 @@ const SiteLayout = ({ children }) => {
           height: "83px",
         }}
       >
-        {/* <div
+        <div
           style={{
             float: "right",
             width: 120,
@@ -42,7 +42,7 @@ const SiteLayout = ({ children }) => {
             margin: "16px 24px 16px 0",
             background: "#83afd4",
           }}
-        /> */}
+        />
         <Menu
           // theme="dark"
           style={{ color: headerTextColor }}

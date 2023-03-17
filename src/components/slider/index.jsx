@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Carousel } from "antd";
 import { Col, Divider, Row } from "antd";
 import "../slider/style.scss";
 import "../../assets/style/custom.scss";
 
-const contentStyle = {
-  height: "25.438rem",
-  color: "#fff",
-  textAlign: "center",
-  background: "#364d79",
-};
+// const contentStyle = {
+//   height: "25.438rem",
+//   color: "#fff",
+//   textAlign: "center",
+//   background: "#364d79",
+// };
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const SliderCustom = () => {
   return (
@@ -58,20 +62,61 @@ const SliderCustom = () => {
         md={{ span: 16 }}
       >
         <div className="slider-holder">
-          <Carousel autoplay className="carousel">
-            <div>
-              <h3 style={contentStyle}>1</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>2</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>3</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>4</h3>
-            </div>
-          </Carousel>
+          <Swiper
+            navigation={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide
+              style={{ backgroundColor: "red", height: "25.438rem" }}
+            >
+              Slide 1
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ backgroundColor: "yellow", height: "25.438rem" }}
+            >
+              Slide 2
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ backgroundColor: "blue", height: "25.438rem" }}
+            >
+              Slide 3
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ backgroundColor: "orange", height: "25.438rem" }}
+            >
+              Slide 4
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ backgroundColor: "black", height: "25.438rem" }}
+            >
+              Slide 5
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ backgroundColor: "pink", height: "25.438rem" }}
+            >
+              Slide 6
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ backgroundColor: "purple", height: "25.438rem" }}
+            >
+              Slide 7
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ backgroundColor: "brown", height: "25.438rem" }}
+            >
+              Slide 8
+            </SwiperSlide>
+            <SwiperSlide
+              style={{ backgroundColor: "white", height: "25.438rem" }}
+            >
+              Slide 9
+            </SwiperSlide>
+          </Swiper>
         </div>
       </Col>
     </Row>

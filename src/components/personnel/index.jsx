@@ -40,8 +40,9 @@ const Personnel = () => {
           key={key}
           className="gutter-row"
           xs={{ span: 24 }}
-          sm={{ span: 12 }}
-          md={{ span: 6 }}
+          sm={{ span: 24 }}
+          md={{ span: 12 }}
+          lg={{ span: 6 }}
         >
           <div className="all-card">
             <div className="card">
@@ -51,19 +52,23 @@ const Personnel = () => {
                     backgroundColor: "#eff2f9",
                   }}
                   size={{
-                    xs: 90,
-                    sm: 60,
-                    md: 70,
-                    lg: 84,
-                    xl: 90,
+                    xs: 30,
+                    sm: 40,
+                    md: 50,
+                    lg: 60,
+                    xl: 70,
                     xxl: 100,
                   }}
                   icon={element.icon}
                 />
               </div>
               <div className="card-info">
-                <div className="name fw-600">{element.name}</div>
-                <div className="position fw-500">{element.position}</div>
+                <div className="personal-name fw-600">
+                  <p>{element.name}</p>
+                </div>
+                <div className="personal-position fw-500">
+                  <p>{element.position}</p>
+                </div>
               </div>
             </div>
           </div>
