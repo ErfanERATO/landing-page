@@ -5,7 +5,8 @@ import Management from "../../components/management";
 import Personnel from "../../components/personnel";
 import Representation from "../../components/representation";
 import SliderCustom from "../../components/slider";
-import Supplies from "../../components/supplies";
+import ForeignSupplies from "../../components/foreignsupplies";
+import InnerSupplies from "../../components/innersupplies";
 
 const PageOne = () => {
   return (
@@ -46,26 +47,15 @@ const PageOne = () => {
       </div>
 
       <div className="supplies-section">
-        <div className="supplies-title fw-600">لوازم تحت پوشش</div>
+        <div className="supplies-title fw-600">برند‌های خارجی</div>
         <div className="supplies-card">
-          <Supplies />
+          <ForeignSupplies />
         </div>
       </div>
-
-      <div className="seperator-section">
-        <div className="title">
-          <div className="text fw-600">درباره تیم خبره ما</div>
-        </div>
-        <div className="trust-sub-text">اعتماد شما و سپردن پروژه</div>
-        <div className="trust-sub2-text">متخصصان</div>
-        <div className="description">
-          <div className="trust-description">
-            خدمات فناوری اطلاعات ما به کارشناسان تجارت و فناوری همگرا می شوند تا
-            به
-          </div>
-          <div className="trust-description2">
-            مدیریت دسته های تجاری کمک کنند
-          </div>
+      <div className="supplies-section">
+        <div className="supplies-title fw-600">برند‌های ایرانی</div>
+        <div className="supplies-card">
+          <InnerSupplies/>
         </div>
       </div>
 

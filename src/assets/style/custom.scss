@@ -101,41 +101,6 @@ html {
     padding-top: 30px;
   }
 }
-// -------------seperator-----------------
-.seperator-section {
-  background-color: #eff2f9;
-  margin-top: 50px;
-  padding: 20px 0px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-
-  .title {
-    background-color: #dbeaff;
-    display: flex;
-    width: 7.5rem;
-    height: 1.563rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.625rem;
-    .text{
-      color: #3b82f6;
-    }
-  }
-  .trust-sub-text {
-    padding-top: 10px;
-    font-weight: 700;
-    font-size: 30px;
-  }
-  .trust-sub2-text {
-    font-weight: 700;
-    font-size: 30px;
-  }
-  .description {
-    padding-top: 25px;
-  }
-}
 
 // -------------Management-----------------
 

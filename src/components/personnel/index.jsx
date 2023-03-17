@@ -7,23 +7,23 @@ const Personnel = () => {
   let elements = [
     {
       icon: <AntDesignOutlined />,
-      name: "اسم پرسنل",
-      position: "تخصص پرسنل",
+      name: "آرمین مقیم",
+      position: "تکنسین یخچال فریز ",
     },
     {
       icon: <AntDesignOutlined />,
-      name: "اسم پرسنل",
-      position: "تخصص پرسنل",
+      name: "حسن موئمنی",
+      position: "تکنسین تخصصی یخچال فریزرهای‌ایرانی ",
     },
     {
       icon: <AntDesignOutlined />,
-      name: "اسم پرسنل",
-      position: "تخصص پرسنل",
+      name: "احمد مجردی",
+      position: "تکنیسین ظرفشویی و لباسشویی اتوماتیک ",
     },
     {
       icon: <AntDesignOutlined />,
-      name: "اسم پرسنل",
-      position: "تخصص پرسنل",
+      name: "سجاد شهری زاد",
+      position: "تکنسین لباسشویی اتوماتیک",
     },
   ];
   return (
@@ -47,9 +47,9 @@ const Personnel = () => {
             <div className="card">
               <div className="avatar">
                 <Avatar
-                style={{
-                  backgroundColor:"#eff2f9"
-                }}
+                  style={{
+                    backgroundColor: "#eff2f9",
+                  }}
                   size={{
                     xs: 90,
                     sm: 60,

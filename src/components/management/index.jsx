@@ -7,33 +7,17 @@ const Management = () => {
   let elements = [
     {
       icon: <AntDesignOutlined />,
-      name: "اسم کادر مدیریت",
-      position: "سمت کادر مدیریت",
+      name: "محمدرضا ناصری",
+      position: "مدیر عامل",
+      expertise:
+        "متخصص برد های کامپیوتری و تعمیرات یخچال‌فریزر کولرگازی اسپیلت ماشین لباسشویی اتوماتیک ظرفشویی  گاز‌رومیزی ",
     },
     {
       icon: <AntDesignOutlined />,
-      name: "اسم کادر مدیریت",
-      position: "سمت کادر مدیریت",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      name: "اسم کادر مدیریت",
-      position: "سمت کادر مدیریت",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      name: "اسم کادر مدیریت",
-      position: "سمت کادر مدیریت",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      name: "اسم کادر مدیریت",
-      position: "سمت کادر مدیریت",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      name: "اسم کادر مدیریت",
-      position: "سمت کادر مدیریت",
+      name: "امیرمهدی ناصری",
+      position: "مدیریت داخلی",
+      expertise:
+        "امیرمهدی ناصری کارشناس برد های کامپیوتری و متخصص تعمیرات یخچال‌فریزر  کولرگازی اسپیلت ماشین لباسشویی اتوماتیک",
     },
   ];
   return (
@@ -55,30 +39,37 @@ const Management = () => {
           key={key}
           className="gutter-row"
           xs={{ span: 24 }}
-          sm={{ span: 12 }}
-          md={{ span: 4 }}
+          sm={{ span: 24 }}
+          md={{ span: 12 }}
         >
-          <div className="whole-card">
+          <div className="card-holder">
             <div className="main-card">
               <div className="avatar">
                 <Avatar
-                style={{
-                  backgroundColor:"#eff2f9"
-                }}
+                  style={{
+                    backgroundColor: "#eff2f9",
+                  }}
                   size={{
-                    xs: 90,
-                    sm: 60,
-                    md: 70,
-                    lg: 84,
-                    xl: 90,
-                    xxl: 100,
+                    xs: 70,
+                    sm: 70,
+                    md: 80,
+                    lg: 90,
+                    xl: 120,
+                    xxl: 130,
                   }}
                   icon={element.icon}
                 />
               </div>
               <div className="card-info">
-                <div className="name fw-600">{element.name}</div>
-                <div className="position fw-500">{element.position}</div>
+                <div className="name fw-600">
+                  نام‌و‌نام‌خانوادگی : {element.name}
+                </div>
+                <div className="position fw-500">
+                  سمت مدیریتی : {element.position}
+                </div>
+                <div className="expertise fw-500">
+                  تخصص : {element.expertise}
+                </div>
               </div>
             </div>
           </div>

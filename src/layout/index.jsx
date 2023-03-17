@@ -6,7 +6,12 @@ const { Header, Content, Footer } = Layout;
 
 const SiteLayout = ({ children }) => {
   const {
-    token: { colorBgContainer, headerBackGround, pageBackaground, headerTextColor },
+    token: {
+      colorBgContainer,
+      headerBackGround,
+      pageBackaground,
+      headerTextColor,
+    },
   } = theme.useToken();
   return (
     <Layout
@@ -18,12 +23,12 @@ const SiteLayout = ({ children }) => {
       }}
     >
       <Header
-      className="fw-600"
+        className="fw-600"
         style={{
           position: "sticky",
           top: 0,
           padding: "20px 0px",
-          zIndex: 1,
+          zIndex: 100,
           width: "100%",
           background: headerBackGround,
           height: "83px",
@@ -40,7 +45,7 @@ const SiteLayout = ({ children }) => {
         /> */}
         <Menu
           // theme="dark"
-          style={{ color: headerTextColor, }}
+          style={{ color: headerTextColor }}
           mode="horizontal"
           defaultSelectedKeys={["2"]}
           items={[
@@ -51,22 +56,32 @@ const SiteLayout = ({ children }) => {
             },
             {
               key: "2",
-              label: "نمایندگی‌ها",
+              label: "درباره‌ی ما",
               style: { padding: "0px 25px" },
             },
             {
               key: "3",
-              label: "پرسنل",
+              label: "نمایندگی‌های فعال",
               style: { padding: "0px 25px" },
             },
             {
               key: "4",
-              label: "مدیریت",
+              label: "برند‌های خارجی",
               style: { padding: "0px 25px" },
             },
             {
               key: "5",
-              label: "خدمات",
+              label: "برند‌های ایرانی",
+              style: { padding: "0px 25px" },
+            },
+            {
+              key: "6",
+              label: "کادر مدیریتی",
+              style: { padding: "0px 25px" },
+            },
+            {
+              key: "7",
+              label: "پرسنل‌و‌تکنسین",
               style: { padding: "0px 25px" },
             },
           ]}

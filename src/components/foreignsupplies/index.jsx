@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
 import { Col, Divider, Row, Avatar } from "antd";
 import { AntDesignOutlined } from "@ant-design/icons";
-import "../representation/style.scss";
-import "../../assets/style/custom.scss";
+import "./style.scss";
+import "../../assets/style/custom.scss"
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,75 +16,83 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const Representation = () => {
+const ForeignSupplies = () => {
   let elements = [
     {
       icon: <AntDesignOutlined />,
-      info: "پاکسرویس ناواران‌سرویس (امرسان) ",
+      info: "TOSHIBA",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "همتاسرویس",
+      info: "SAMSUNG",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "کاراسرویس",
+      info: "ARÇELIK",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "سیهاوی",
+      info: "PANASONIC",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "بوش‌سرویس",
+      info: "LG",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "تاپ‌سرویس",
+      info: "KENWOOD",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "گلد‌سرویس",
+      info: "INDESIT",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "DAEWOO",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "BOSCH",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "ARISTON",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "AGE",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "MIDEA",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "ELECTROMAX",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "BLOOMBERG",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "SIMENS",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "WATERHOUSE",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "WESTINGHOUSE",
+    },
+    {
+      icon: <AntDesignOutlined />,
+      info: "BEKO",
+    },
+    {
+      icon: <AntDesignOutlined />,
+      info: "SNOWA",
     },
   ];
   return (
@@ -161,4 +171,4 @@ const Representation = () => {
   );
 };
 
-export default Representation;
+export default ForeignSupplies;

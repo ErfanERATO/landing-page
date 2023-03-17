@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
 import { Col, Divider, Row, Avatar } from "antd";
 import { AntDesignOutlined } from "@ant-design/icons";
-import "../representation/style.scss";
-import "../../assets/style/custom.scss";
+import "./style.scss";
+import "../../assets/style/custom.scss"
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,75 +16,51 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const Representation = () => {
+const InnerSupplies = () => {
   let elements = [
     {
       icon: <AntDesignOutlined />,
-      info: "پاکسرویس ناواران‌سرویس (امرسان) ",
+      info: "پاکشوما",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "همتاسرویس",
+      info: "امرسان",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "کاراسرویس",
+      info: "هیمالیا",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "سیهاوی",
+      info: "سینجر",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "بوش‌سرویس",
+      info: "سام",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "تاپ‌سرویس",
+      info: "بلنتون",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "گلد‌سرویس",
+      info: "فردولین",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "زیروات",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "بست",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "ایکس‌ویژن",
     },
     {
       icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
-    },
-    {
-      icon: <AntDesignOutlined />,
-      info: "نوین‌سرویس مادیران ",
+      info: "تی.سی.ال",
     },
   ];
   return (
@@ -161,4 +139,4 @@ const Representation = () => {
   );
 };
 
-export default Representation;
+export default InnerSupplies;
