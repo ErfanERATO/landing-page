@@ -14,21 +14,21 @@ const PageOne = () => {
       <SliderCustom />
 
       <div className="about-us">
-        <div className="about-us-title fw-600">درباره‌ی ما</div>
+        <h2 className="about-us-title fw-600">درباره‌ی ما</h2>
 
         <div className="about-us-description fw-500">
-          <div>
+          <p>
             خدمات فنی ناصری مرکز تخصصی نصب، آموزش و تعمیرات لوازم خانگی در
             نیشابور بوده و مجری تخصصی خدمات
-          </div>
-          <div>
+          </p>
+          <p>
             پس از فروش برند های مطرح ایرانی و خارجی درکنار شماست تا دسترسی به
             متخصصان و تکنیسین های مجرب را برای شما آسان کند .
-          </div>
-          <div>
+          </p>
+          <p>
             علاوه بر گرد آوری تیم تخصصی تعمیرات ، استفاده از قطعات اصلی ارئه
             فاکتور انلاین و گارانتی رسمی است .
-          </div>
+          </p>
           {/* <div>
             مجموعه ما با داشتن بیشترین متقاضی‌ در نیشابور برای خرید قطعات دستگاه
             ، شوینده مناسب ،کیسه جاروبرقی و انواع لوازم جانبی ،درخدمت شما
@@ -40,34 +40,34 @@ const PageOne = () => {
       </div>
 
       <div className="representation-section">
-        <div className="representation-title fw-600">نمایندگی‌های فعال</div>
+        <h2 className="representation-title fw-600">نمایندگی‌های فعال</h2>
         <div className="representation-card">
           <Representation />
         </div>
       </div>
 
       <div className="supplies-section">
-        <div className="supplies-title fw-600">برند‌های خارجی</div>
+        <h2 className="supplies-title fw-600">برند‌های خارجی</h2>
         <div className="supplies-card">
           <ForeignSupplies />
         </div>
       </div>
       <div className="supplies-section">
-        <div className="supplies-title fw-600">برند‌های ایرانی</div>
+        <h2 className="supplies-title fw-600">برند‌های ایرانی</h2>
         <div className="supplies-card">
           <InnerSupplies/>
         </div>
       </div>
 
       <div className="management-section">
-        <div className="management-title fw-600">کادر مدیریتی</div>
+        <h2 className="management-title fw-600">کادر مدیریتی</h2>
         <div className="management-card">
           <Management />
         </div>
       </div>
 
       <div className="personnel-section">
-        <div className="personnel-title fw-600">پرسنل و تکنسین</div>
+        <h2 className="personnel-title fw-600">پرسنل و تکنسین</h2>
         <div className="personnel-card">
           <Personnel />
         </div>

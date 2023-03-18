@@ -60,28 +60,35 @@ html {
   justify-content: center;
   padding-top: 50px;
   text-align: center;
+  p {
+    margin-bottom: 0rem;
+  }
   .about-us-title {
     font-size: 1.625rem;
     color: #3b82f6;
+    margin-bottom: 0rem;
   }
   .about-us-description {
+    p {
+      margin-bottom: 0rem;
+    }
     display: flex;
     flex-direction: column;
     font-size: 0.813rem;
     line-height: 1.626rem;
-    padding-top: 10px;
+    padding-top: 20px;
     color: #9ba0c6;
   }
 }
 // -------------representation-----------------
 
 .representation-section {
-  padding-top: 50px;
+  padding-top: 80px;
   .representation-title {
     text-align: center;
     font-size: 1.563rem;
     color: #3b82f6;
-
+    margin-bottom: 0rem;
   }
   .representation-card {
     padding-top: 30px;
@@ -91,11 +98,12 @@ html {
 // -------------Supplies-----------------
 
 .supplies-section {
-  padding-top: 50px;
+  padding-top: 80px;
   .supplies-title {
     color: #3b82f6;
     text-align: center;
     font-size: 1.563rem;
+    margin-bottom: 0rem;
   }
   .supplies-card {
     padding-top: 30px;
@@ -105,12 +113,12 @@ html {
 // -------------Management-----------------
 
 .management-section {
-  padding-top: 50px;
-
+  padding-top: 80px;
   .management-title {
     color: #3b82f6;
     text-align: center;
     font-size: 1.563rem;
+    margin-bottom: 0rem;
   }
   .management-card {
     padding-top: 30px;
@@ -120,12 +128,13 @@ html {
 // -------------Personnel-----------------
 
 .personnel-section {
-  padding-top: 50px;
+  padding-top: 80px;
 
   .personnel-title {
     color: #3b82f6;
     text-align: center;
     font-size: 1.563rem;
+    margin-bottom: 0rem;
   }
   .personnel-card {
     padding-top: 30px;

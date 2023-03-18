@@ -19,7 +19,6 @@ const SiteLayout = ({ children }) => {
         minHeight: "100vh",
         background: pageBackaground,
         direction: "rtl",
-        padding: "0px 40px",
       }}
     >
       <Header
@@ -45,7 +44,7 @@ const SiteLayout = ({ children }) => {
         />
         <Menu
           // theme="dark"
-          style={{ color: headerTextColor }}
+          style={{ color: headerTextColor, paddingRight:"45px" }}
           mode="horizontal"
           defaultSelectedKeys={["2"]}
           items={[
@@ -90,12 +89,12 @@ const SiteLayout = ({ children }) => {
       <Content
         className="site-layout fw-600"
         style={{
-          padding: "50px 0px",
+          padding: "00px 0px",
         }}
       >
         <div
           style={{
-            padding: 24,
+            padding: 40,
             minHeight: 380,
             background: colorBgContainer,
           }}

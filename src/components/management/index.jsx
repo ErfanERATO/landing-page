@@ -52,9 +52,9 @@ const Management = () => {
                         backgroundColor: "#eff2f9",
                       }}
                       size={{
-                        xs: 30,
-                        sm: 40,
-                        md: 50,
+                        xs: 60,
+                        sm: 60,
+                        md: 60,
                         lg: 60,
                         xl: 70,
                         xxl: 100,
@@ -65,7 +65,7 @@ const Management = () => {
 
                   <div className="name-position">
                     <div className="name">
-                      <p>{element.name}</p>
+                      <h3 className="fw-500">{element.name}</h3>
                     </div>
 
                     <div className="position">
@@ -74,7 +74,7 @@ const Management = () => {
                   </div>
                 </div>
 
-                <div className="maneger-description">
+                <div className="maneger-description fw-500">
                   <p>{element.expertise}</p>
                 </div>
               </div>

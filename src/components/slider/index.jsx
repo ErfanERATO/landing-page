@@ -3,13 +3,6 @@ import { Carousel } from "antd";
 import { Col, Divider, Row } from "antd";
 import "../slider/style.scss";
 import "../../assets/style/custom.scss";
-
-// const contentStyle = {
-//   height: "25.438rem",
-//   color: "#fff",
-//   textAlign: "center",
-//   background: "#364d79",
-// };
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
@@ -28,29 +21,28 @@ const SliderCustom = () => {
       <Col
         className="gutter-row"
         xs={{ span: 24 }}
-        sm={{ span: 8 }}
-        md={{ span: 8 }}
+        sm={{ span: 24 }}
+        md={{ span: 12 }}
+        lg={{ span: 8 }}
         style={{
           justifyContent: "center",
         }}
       >
         <div className="text-holder">
           <div className="slider-text-title">
-            <div>
+            <h1 className="fw-600">
               خدمات فنی <span>ناصری</span>
-            </div>
+            </h1>
           </div>
 
           <div className="slider-text-sub fw-400">
-            <div>
+            <p>
               نمایندگی تعمیرات لوازم خانگی : لباسشویی اتوماتیک٬ ماشین ظرفشویی٬
-              یخچال فریزر٬ کولر گازی٬ اسپیلت
-            </div>
-            <div>
-              مجموعه ما با داشتن بیشترین متقاضی‌ در نیشابور برای خرید قطعات
-              دستگاه ، شوینده مناسب ،کیسه جاروبرقی و انواع لوازم جانبی ،درخدمت
-              شما مشتریان گرامی میباشد .
-            </div>
+              یخچال فریزر٬ کولر گازی٬ اسپیلت با بیش از ۳۰ سال تجربه
+            </p>
+            <p>
+              سال تاسیس <span>۱۳۶۸</span>
+            </p>
           </div>
         </div>
       </Col>
@@ -58,15 +50,18 @@ const SliderCustom = () => {
       <Col
         className="gutter-row"
         xs={{ span: 24 }}
-        sm={{ span: 18 }}
-        md={{ span: 16 }}
+        sm={{ span: 24 }}
+        md={{ span: 12 }}
+        lg={{ span: 16 }}
       >
         <div className="slider-holder">
           <Swiper
-            navigation={true}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
+            }}
+            pagination={{
+              dynamicBullets: true,
             }}
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"

@@ -1,26 +1,25 @@
 .text-holder {
-  height: 25.438rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: right;
   line-height: 1.875rem;
-  .slider-text-title{
-    font-size: 3.7rem;
-    line-height: 3rem;
-    div{
+  .slider-text-title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    h1 {
       color: #21313e;
-      span{
+      margin-bottom: 0rem;
+      span {
         color: #3b82f6;
       }
     }
   }
-  .slider-text-sub{
+  .slider-text-sub {
     padding-top: 25px;
     color: #9ba0c6;
+    span {
+      color: #3b82f6;
+    }
   }
-}
-
-.slider-holder {
-  height: 25.438rem;
 }

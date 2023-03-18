@@ -9,11 +9,14 @@
     border-radius: 0.438rem;
     justify-content: flex-start;
     align-items: center;
-    padding: 40px 40px;
+    padding: 30px 30px;
     .avatar-name-position-expertise {
       display: flex;
       flex-direction: column;
       line-height: 1.5rem;
+      p{
+        margin-bottom: 0rem;
+      }
       .avatar-name-position {
         display: flex;
         flex-direction: row;
@@ -21,9 +24,11 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding-right: 20px;
+          padding-right: 10px;
           .name {
-            font-size: 1.2rem;
+            h3{
+              font-size: 1.5rem;
+            }
           }
           .position {
             font-size: 0.75rem;
@@ -34,6 +39,7 @@
       .maneger-description {
         color: #a0a3b4;
         padding-top: 10px;
+        font-size: 1rem;
       }
     }
   }

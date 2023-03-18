@@ -1,19 +1,26 @@
 @media only screen and (min-width: 300px) {
 }
 @media (max-width: 599px) {
-
+  h1 {
+    font-size: 2.1rem !important;
+  }
 }
 @media (min-width: 600px) {
-
+  h1 {
+    font-size: 2.5rem !important;
+  }
 }
 
 @media (min-width: 900px) {
-
-
+  h1 {
+    font-size: 3rem !important;
+  }
 }
 
 @media (min-width: 1200px) {
-
+  h1 {
+    font-size: 3.5rem !important;
+  }
 }
 
 @media (min-width: 2000px) {

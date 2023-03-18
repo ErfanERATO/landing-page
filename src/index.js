@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ConfigProvider } from "antd";
 import theme from "../src/utils/theme";
 import "../src/assets/fonts/kalame/stylesheet.css";
+import "../src/assets/style/responsive.scss"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

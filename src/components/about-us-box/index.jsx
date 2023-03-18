@@ -41,8 +41,8 @@ const AboutBox = () => {
               </div>
             </div>
             <div className="text">
-              <div className="number">{element.number}</div>
-              <div className="sub">{element.sub}</div>
+              <p className="number">{element.number}</p>
+              <p className="sub">{element.sub}</p>
             </div>
           </div>
         </Col>

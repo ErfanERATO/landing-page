@@ -18,8 +18,10 @@
       white-space: nowrap;
       justify-content: center;
       .personal-name {
-        font-size: 1rem;
-        color: #3f4254;
+        h3 {
+          font-size: 1.5rem;
+          color: #3f4254;
+        }
       }
       .personal-position {
         font-size: 0.7rem;

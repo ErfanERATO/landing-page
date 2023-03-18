@@ -161,7 +161,7 @@ const ForeignSupplies = () => {
                     icon={element.icon}
                   />
                 </div>
-                <div className="avatar-info fw-500">{element.info}</div>
+                <h3 className="avatar-info fw-500">{element.info}</h3>
               </div>
             </Col>
           </SwiperSlide>
