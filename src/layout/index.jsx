@@ -97,7 +97,7 @@ const SiteLayout = ({ children }) => {
           {children}
         </div>
       </Content>
-      <Footer>
+      <Footer className="footer-layout">
         <FooterCustom />
       </Footer>
     </Layout>
