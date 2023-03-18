@@ -1,0 +1,29 @@
+.form {
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  .form-title {
+    color: #21313e;
+  }
+
+  .form-description {
+    color: #9ba0c6;
+  }
+
+  .form-location {
+    display: flex;
+    align-items: center;
+    color: #9ba0c6;
+  }
+  .form-phone {
+    display: flex;
+    align-items: center;
+    color: #9ba0c6;
+  }
+  .form-email {
+    display: flex;
+    align-items: center;
+    color: #9ba0c6;
+  }
+}

@@ -7,6 +7,7 @@ import Representation from "../../components/representation";
 import SliderCustom from "../../components/slider";
 import ForeignSupplies from "../../components/foreignsupplies";
 import InnerSupplies from "../../components/innersupplies";
+import Divider from "../../components/divider";
 
 const PageOne = () => {
   return (
@@ -46,6 +47,10 @@ const PageOne = () => {
         </div>
       </div>
 
+      <div className="divider-section">
+        <Divider/>
+      </div>
+
       <div className="supplies-section">
         <h2 className="supplies-title fw-600">برند‌های خارجی</h2>
         <div className="supplies-card">
@@ -72,6 +77,7 @@ const PageOne = () => {
           <Personnel />
         </div>
       </div>
+
     </div>
   );
 };

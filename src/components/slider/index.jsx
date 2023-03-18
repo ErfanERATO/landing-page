@@ -26,6 +26,7 @@ const SliderCustom = () => {
         lg={{ span: 8 }}
         style={{
           justifyContent: "center",
+          display: "flex"
         }}
       >
         <div className="text-holder">

@@ -6,15 +6,15 @@ import "../management/style.scss";
 const Management = () => {
   let elements = [
     {
-      icon: <AntDesignOutlined />,
       name: "محمدرضا ناصری",
+      img: require("../../assets/image/useravatar.png"),
       position: "مدیر عامل",
       expertise:
         "متخصص برد های کامپیوتری و تعمیرات یخچال‌فریزر کولرگازی اسپیلت ماشین لباسشویی اتوماتیک ظرفشویی  گاز‌رومیزی ",
     },
     {
-      icon: <AntDesignOutlined />,
       name: "امیرمهدی ناصری",
+      img: require("../../assets/image/useravatar.png"),
       position: "مدیریت داخلی",
       expertise:
         "امیرمهدی ناصری کارشناس برد های کامپیوتری و متخصص تعمیرات یخچال‌فریزر  کولرگازی اسپیلت ماشین لباسشویی اتوماتیک",
@@ -59,7 +59,7 @@ const Management = () => {
                         xl: 70,
                         xxl: 100,
                       }}
-                      icon={element.icon}
+                      src={element.img}
                     />
                   </div>
 

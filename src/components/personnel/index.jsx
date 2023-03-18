@@ -6,22 +6,22 @@ import "../personnel/style.scss";
 const Personnel = () => {
   let elements = [
     {
-      icon: <AntDesignOutlined />,
+      img: require("../../assets/image/useravatar.png"),
       name: "آرمین مقیم",
       position: "تکنسین یخچال فریز ",
     },
     {
-      icon: <AntDesignOutlined />,
+      img: require("../../assets/image/useravatar.png"),
       name: "حسن موئمنی",
       position: "تکنسین تخصصی یخچال فریزرهای‌ایرانی ",
     },
     {
-      icon: <AntDesignOutlined />,
+      img: require("../../assets/image/useravatar.png"),
       name: "احمد مجردی",
       position: "تکنیسین ظرفشویی و لباسشویی اتوماتیک ",
     },
     {
-      icon: <AntDesignOutlined />,
+      img: require("../../assets/image/useravatar.png"),
       name: "سجاد شهری زاد",
       position: "تکنسین لباسشویی اتوماتیک",
     },
@@ -59,7 +59,7 @@ const Personnel = () => {
                     xl: 70,
                     xxl: 100,
                   }}
-                  icon={element.icon}
+                  src={element.img}
                 />
               </div>
               <div className="card-info">

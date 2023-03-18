@@ -1,6 +1,6 @@
 import { Layout, Menu, theme } from "antd";
 import "../assets/style/custom.scss";
-import FooterCustom from "../components/fotter";
+import FooterCustom from "../components/footercustom";
 
 const { Header, Content, Footer } = Layout;
 
@@ -44,7 +44,7 @@ const SiteLayout = ({ children }) => {
         />
         <Menu
           // theme="dark"
-          style={{ color: headerTextColor, paddingRight:"45px" }}
+          style={{ color: headerTextColor, paddingRight: "45px" }}
           mode="horizontal"
           defaultSelectedKeys={["2"]}
           items={[
@@ -86,12 +86,7 @@ const SiteLayout = ({ children }) => {
           ]}
         />
       </Header>
-      <Content
-        className="site-layout fw-600"
-        style={{
-          padding: "00px 0px",
-        }}
-      >
+      <Content className="site-layout fw-600">
         <div
           style={{
             padding: 40,
