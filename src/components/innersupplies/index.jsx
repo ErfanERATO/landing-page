@@ -19,52 +19,64 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 const InnerSupplies = () => {
   let elements = [
     {
+      image: require("../../assets/image/suppl-icon/1.png"),
       icon: <AntDesignOutlined />,
       info: "پاکشوما",
     },
     {
+      image: require("../../assets/image/suppl-icon/2.png"),
       icon: <AntDesignOutlined />,
       info: "امرسان",
     },
     {
+      image: require("../../assets/image/suppl-icon/3.png"),
       icon: <AntDesignOutlined />,
       info: "هیمالیا",
     },
     {
+      image: require("../../assets/image/suppl-icon/4.png"),
       icon: <AntDesignOutlined />,
       info: "سینجر",
     },
     {
+      image: require("../../assets/image/suppl-icon/5.png"),
       icon: <AntDesignOutlined />,
       info: "سام",
     },
     {
+      image: require("../../assets/image/suppl-icon/6.png"),
       icon: <AntDesignOutlined />,
       info: "بلنتون",
     },
     {
+      image: require("../../assets/image/suppl-icon/7.png"),
       icon: <AntDesignOutlined />,
       info: "فردولین",
     },
     {
+      image: require("../../assets/image/suppl-icon/8.png"),
       icon: <AntDesignOutlined />,
       info: "زیروات",
     },
     {
+      image: require("../../assets/image/suppl-icon/9.png"),
       icon: <AntDesignOutlined />,
       info: "بست",
     },
     {
+      image: require("../../assets/image/suppl-icon/10.png"),
       icon: <AntDesignOutlined />,
       info: "ایکس‌ویژن",
     },
     {
+      image: require("../../assets/image/suppl-icon/11.png"),
       icon: <AntDesignOutlined />,
       info: "تی.سی.ال",
     },
   ];
   return (
     <Row
+    id="iran"
       gutter={{
         xs: 8,
         sm: 16,
@@ -114,7 +126,8 @@ const InnerSupplies = () => {
             >
               <div className="representation-info">
                 <div className="avatar">
-                  <Avatar
+                <Avatar
+                    className="avtar-image"
                     style={{
                       backgroundColor: "#eff2f9",
                     }}
@@ -126,8 +139,10 @@ const InnerSupplies = () => {
                       xl: 90,
                       xxl: 100,
                     }}
-                    icon={element.icon}
-                  />
+                    // icon={element.icon}
+                  >
+                    <img src={element.image} alt="" style={{padding:"0px 30px"}}/>
+                  </Avatar>
                 </div>
                 <h3 className="avatar-info fw-500">{element.info}</h3>
               </div>

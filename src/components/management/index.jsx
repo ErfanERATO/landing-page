@@ -22,6 +22,7 @@ const Management = () => {
   ];
   return (
     <Row
+      id="manage"
       gutter={{
         xs: 40,
         sm: 38,

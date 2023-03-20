@@ -8,13 +8,16 @@ import SliderCustom from "../../components/slider";
 import ForeignSupplies from "../../components/foreignsupplies";
 import InnerSupplies from "../../components/innersupplies";
 import Divider from "../../components/divider";
+import FooterCustom from "../../components/footercustom";
+import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+
 
 const PageOne = () => {
   return (
     <div className="Main-content">
       <SliderCustom />
 
-      <div className="about-us">
+      <div className="about-us container">
         <h2 className="about-us-title fw-600">درباره‌ی ما</h2>
 
         <div className="about-us-description fw-500">
@@ -30,54 +33,57 @@ const PageOne = () => {
             علاوه بر گرد آوری تیم تخصصی تعمیرات ، استفاده از قطعات اصلی ارئه
             فاکتور انلاین و گارانتی رسمی است .
           </p>
-          {/* <div>
+          <div>
             مجموعه ما با داشتن بیشترین متقاضی‌ در نیشابور برای خرید قطعات دستگاه
             ، شوینده مناسب ،کیسه جاروبرقی و انواع لوازم جانبی ،درخدمت شما
             مشتریان گرامی میباشد .
-          </div> */}
+          </div>
         </div>
 
         <AboutBox />
       </div>
 
-      <div className="representation-section">
+      <div className="representation-section container">
         <h2 className="representation-title fw-600">نمایندگی‌های فعال</h2>
         <div className="representation-card">
           <Representation />
         </div>
       </div>
 
-      <div className="divider-section">
-        <Divider/>
+      <div className="divider-section container">
+        <Divider />
       </div>
 
-      <div className="supplies-section">
+      <div className="supplies-section container">
         <h2 className="supplies-title fw-600">برند‌های خارجی</h2>
         <div className="supplies-card">
           <ForeignSupplies />
         </div>
       </div>
-      <div className="supplies-section">
+      <div className="supplies2-section container">
         <h2 className="supplies-title fw-600">برند‌های ایرانی</h2>
         <div className="supplies-card">
-          <InnerSupplies/>
+          <InnerSupplies />
         </div>
       </div>
 
-      <div className="management-section">
+      <div className="management-section container">
         <h2 className="management-title fw-600">کادر مدیریتی</h2>
         <div className="management-card">
           <Management />
         </div>
       </div>
 
-      <div className="personnel-section">
+      <div className="personnel-section container">
         <h2 className="personnel-title fw-600">پرسنل و تکنسین</h2>
         <div className="personnel-card">
           <Personnel />
         </div>
       </div>
 
+      <div className="map-section">
+        <FooterCustom />
+      </div>
     </div>
   );
 };

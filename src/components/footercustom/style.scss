@@ -2,6 +2,8 @@
   line-height: 2rem;
   display: flex;
   flex-direction: column;
+  padding-top: 55px;
+  padding-bottom: 10px;
 
   .form-title {
     color: #21313e;
@@ -11,27 +13,40 @@
     color: #9ba0c6;
   }
 
-  .form-location {
+  .icon-sec {
     display: flex;
-    align-items: center;
-    color: #9ba0c6;
-  }
-  .form-phone {
-    display: flex;
-    align-items: center;
-    color: #9ba0c6;
-  }
-  .form-email {
-    display: flex;
-    align-items: center;
-    color: #9ba0c6;
+    justify-content: center;
+    .form-location {
+      display: flex;
+      align-items: center;
+      color: #9ba0c6;
+      padding-right: 10px;
+    }
+    .form-phone {
+      display: flex;
+      align-items: center;
+      color: #9ba0c6;
+      padding-right: 10px;
+    }
+    .form-email {
+      display: flex;
+      align-items: center;
+      color: #9ba0c6;
+      padding-right: 10px;
+    }
   }
 }
 
-
-.location{
-    .leaflet-container{
-        border-radius: 10px;
-        height: 300px;
+.whole-map {
+  margin-top: 100px;
+  .location {
+    // padding-top: 100px;
+    margin-top: -200px;
+    border-radius: 7px;
+    .leaflet-container {
+      box-shadow: 0 4px 20px rgba(118, 112, 183, 0.1);
+      border-radius: 10px;
+      height: 400px;
     }
+  }
 }

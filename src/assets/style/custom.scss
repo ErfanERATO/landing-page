@@ -2,6 +2,7 @@ html {
   font-size: 16px !important;
   body {
     font-family: "Kalameh" !important;
+    overflow-x: hidden;
   }
 }
 
@@ -33,18 +34,26 @@ html {
   background-color: #fff !important;
   color: #3b82f6 !important;
   &::after {
-    border-bottom-color: #3b82f6 !important;
+    border-bottom-color: transparent !important;
   }
 }
 
 .ant-menu-item-active {
   &::after {
-    border-bottom-color: #3b82f6 !important;
+    border-bottom-color: transparent !important;
   }
 }
 
 .ant-menu {
   border: none !important;
+}
+
+.ant-layout-header {
+  li:not(.ant-menu-item-selected) {
+    span {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
 }
 
 // -------------slider-----------------
@@ -58,7 +67,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 100px;
+  margin-top: 100px;
   text-align: center;
   p {
     margin-bottom: 0rem;
@@ -83,7 +92,7 @@ html {
 // -------------representation-----------------
 
 .representation-section {
-  padding-top: 100px;
+  margin-top: 100px;
   .representation-title {
     text-align: center;
     font-size: 1.563rem;
@@ -95,14 +104,14 @@ html {
   }
 }
 // -------------divider-----------------
-.divider-section{
-  padding-top: 100px;
+.divider-section {
+  margin-top: 100px;
 }
 
 // -------------Supplies-----------------
 
 .supplies-section {
-  padding-top: 100px;
+  margin-top: 100px;
   .supplies-title {
     color: #3b82f6;
     text-align: center;
@@ -114,10 +123,25 @@ html {
   }
 }
 
+.supplies2-section {
+  margin-top: 20px;
+  .supplies-title {
+    color: #3b82f6;
+    text-align: center;
+    font-size: 1.563rem;
+    margin-bottom: 0rem;
+  }
+  .supplies-card {
+    padding-top: 30px;
+  }
+}
+
+
+
 // -------------Management-----------------
 
 .management-section {
-  padding-top: 100px;
+  margin-top: 100px;
   .management-title {
     color: #3b82f6;
     text-align: center;
@@ -132,7 +156,7 @@ html {
 // -------------Personnel-----------------
 
 .personnel-section {
-  padding-top: 100px;
+  margin-top: 100px;
 
   .personnel-title {
     color: #3b82f6;
@@ -144,10 +168,11 @@ html {
     padding-top: 30px;
   }
 }
-// -------------Footer-----------------
-.footer-layout{
-  margin-top: 100px;
+// -------------map-----------------
+.map-section{
+  margin-top: 50px;
 }
+
 
 
 .fw-100 {

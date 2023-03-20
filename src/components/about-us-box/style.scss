@@ -1,11 +1,13 @@
 .first-card{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 30px;
   
   .icon-box{
     display: flex;
-    background-color: #eff2f9;
+    // background-color: #eff2f9;
     width: 5rem;
     height: 5rem;
     border-radius: 0.438rem;
@@ -15,23 +17,27 @@
   .text{
     p{
       margin-bottom: 0rem;
+      
     }
     display: flex;
     flex-direction: column;
     text-align: right;
-    padding-right: 20px;
     justify-content: center;
     
-    .number{
-      color: #21313e;
-      font-size: 1.563rem;
-      font-weight: bold;
-      padding-bottom: 7px;
-    }
     .sub{
+      .color-primary{
+        color: #3b82f6;
+      }
       color: #9ba0c6;
       font-size: 1rem;
       font-weight: 500;
+      color: #21313e;
+      font-weight: bold;
+      padding-top: 15px;
+      span{
+        display: inline-block;
+        margin-left: 2px;
+      }
     }
   }
 }

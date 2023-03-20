@@ -5,12 +5,13 @@ import "../divider/style.scss";
 
 const Divider = () => {
   return (
-    <Row>
+    <Row
+    id="divider">
       <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }}>
         <div className="divider-holder">
-          <div className="divider-top fw-500">
+          {/* <div className="divider-top fw-500">
             <p>محصولات ما</p>
-          </div>
+          </div> */}
 
           <div>
             <h2 className="divider-title fw-600">

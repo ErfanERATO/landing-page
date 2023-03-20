@@ -1,37 +1,37 @@
 .divider-holder {
+  background: linear-gradient(180deg, #2270c7, #2c8efe) !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
   background-color: #eff2f9;
   padding: 40px;
   border-radius: 10px;
   line-height: 2rem;
   position: relative;
-
-  .divider-top {
-    color: #3875e8;
-    background-color: #dbeaff;
-    padding: 0px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    p {
-      margin-bottom: 0rem;
-    }
-  }
+  height: 300px;
+  // .divider-top {
+  //   color: #3875e8;
+  //   background-color: #dbeaff;
+  //   padding: 0px 20px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   border-radius: 10px;
+  //   p {
+  //     margin-bottom: 0rem;
+  //   }
+  // }
   .divider-title {
-    color: #21313e;
+    color: white;
     padding-top: 10px;
     font-size: 1.8rem;
     span {
-      color: #3875e8;
+      color: white;
     }
   }
   .divider-description {
-    color: #9ba0c6;
+    color: rgba(250, 250, 250, 0.8);
   }
 }
 
@@ -43,8 +43,8 @@
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.07;
-  background-image: url("../../assets/image/Elegant-Pattern-PNG-Picture.png");
+  opacity: 0.05;
+  background-image: url("../../assets/image/Elegant-Pattern-PNG-Picture2.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
